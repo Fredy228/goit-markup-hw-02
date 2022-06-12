@@ -33,6 +33,34 @@ input{
     width: 100%;
 }
 
+
+/* Главный цвет текста */
+:root {
+    --color-main-text: #212121; 
+}
+
+/* Второстепенный цвет текста */
+:root {
+    --color-secondary-text: #212121; 
+}
+
+/* Цвет при наведении ссылки */
+:root {
+    --color-link-hover: #2196F3; 
+}
+
+/* Цвет кнопки */
+:root {
+    --color-btn: #2196F3; 
+}
+
+/* Цвет при наведении кнопки */
+:root {
+    --color-btn-hover: #188CE8; 
+}
+
+
+
 /* Header */
 
 .header {
@@ -60,10 +88,36 @@ input{
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+    transition: color 0.1s linear;
 }
+
 
 .link-header > a:hover {
     color: #2196F3;
 }
 
 /* Main */
+
+    /* Intro */
+
+.intro-title {
+    font-size: 44px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro-btn {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.8;
+    color: white;
+    background-color: #2196F3;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 4px;
+}
+
+.intro-btn:hover {
+    background-color: #188CE8;
+}
