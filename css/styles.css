@@ -17,15 +17,18 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+    padding: 0;
 }
 
-p{
+p, li, ul, ol{
     margin: 0;
+    padding: 0;
 }
 
 input{
     border: none;
 }
+
 
 .container{
     margin: 0 auto;
@@ -41,17 +44,12 @@ input{
 
 /* Второстепенный цвет текста */
 :root {
-    --color-secondary-text: #212121; 
+    --color-secondary-text: #757575; 
 }
 
-/* Цвет при наведении ссылки */
+/* Цвет темы сайта */
 :root {
-    --color-link-hover: #2196F3; 
-}
-
-/* Цвет кнопки */
-:root {
-    --color-btn: #2196F3; 
+    --color-theme: #2196F3; 
 }
 
 /* Цвет при наведении кнопки */
@@ -70,13 +68,13 @@ input{
 .logo {
     font-size: 26px;
     font-weight: bold;
-    color: #212121;
+    color: black;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
 
 .logo > span {
-    color: #2196F3;
+    color: var(--color-theme);
 }
 
 .list-header {
@@ -84,7 +82,7 @@ input{
 }
 
 .link-header > a {
-    color: #212121;
+    color: var(--color-main-text);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -93,18 +91,25 @@ input{
 
 
 .link-header > a:hover {
-    color: #2196F3;
+    color: var(--color-theme);
 }
 
 /* Main */
 
     /* Intro */
 
+.intro-inner {
+    background-color: #2F303A;
+}
+
 .intro-title {
     font-size: 44px;
     line-height: 1.3;
     font-weight: 700;
     text-transform: uppercase;
+    width: 650px;
+    text-align: center;
+    color: white;
 }
 
 .intro-btn {
@@ -112,12 +117,55 @@ input{
     font-family: 'Roboto', sans-serif; 
     line-height: 1.8;
     color: white;
-    background-color: #2196F3;
+    background-color: var(--color-theme);
     border: none;
     padding: 10px 32px;
     border-radius: 4px;
+    transition: background-color 0.1s linear;
 }
 
 .intro-btn:hover {
-    background-color: #188CE8;
+    background-color: var(--color-btn-hover);
+}
+
+/* Esplly */
+
+.esplly-list {
+    list-style: none;
+}
+
+.esplyy-list-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main-text);
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+.esplyy-list-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-secondary-text);
+    width: 270px;
+}
+
+/* About */
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-main-text);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-list {
+    list-style: none;
+}
+
+/* Team */
+
+.team-inner {
+    color: #F5F4FA;
 }
