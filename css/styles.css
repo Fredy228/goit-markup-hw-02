@@ -1,6 +1,11 @@
+/* 
+    Fonts for using
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 body{
     margin: 0 auto;
-    font-family: 'Balsamiq Sans';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
@@ -35,5 +40,30 @@ input{
 }
 
 .logo {
-    font-size: ;
+    font-size: 26px;
+    font-weight: bold;
+    color: #212121;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
 }
+
+.logo > span {
+    color: #2196F3;
+}
+
+.list-header {
+    list-style: none;
+}
+
+.link-header > a {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link-header > a:hover {
+    color: #2196F3;
+}
+
+/* Main */
