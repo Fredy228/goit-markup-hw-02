@@ -65,7 +65,7 @@ input{
     background-color: white;
 }
 
-.logo {
+.logo-text {
     font-size: 26px;
     font-weight: bold;
     color: black;
@@ -73,20 +73,27 @@ input{
     font-family: 'Raleway', sans-serif;
 }
 
-.logo > span {
+.logo-text > span {
     color: var(--color-theme);
 }
 
-.list-header {
+.list-style-none {
     list-style: none;
 }
 
 .link-header > a {
-    color: var(--color-main-text);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.1s linear;
+}
+
+.nav-list-item > a {
+    color: var(--color-main-text);
+}
+
+.address-list-item > a {
+    color: var(--color-secondary-text);
 }
 
 
@@ -130,10 +137,6 @@ input{
 
 /* Esplly */
 
-.esplly-list {
-    list-style: none;
-}
-
 .esplyy-list-title {
     font-size: 14px;
     font-weight: bold;
@@ -160,12 +163,63 @@ input{
     margin-bottom: 40px;
 }
 
-.about-list {
-    list-style: none;
-}
-
 /* Team */
 
 .team-inner {
-    color: #F5F4FA;
+    background-color: #F5F4FA;
+}
+
+.team-title {
+    color: var(--color-main-text);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list-item {
+    background-color: white;
+    text-align: center;
+    width: 270px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px #757575;
+    margin-bottom: 10px;
+}
+
+.team-list-item > h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-main-text);
+    margin: 30px auto 10px auto;
+}
+
+.team-list-item > p {
+    font-size: 16px;
+    color: var(--color-secondary-text);
+    padding-bottom: 30px;
+}
+
+/* Footer */
+
+.footer-inner {
+    background-color: #2F303A;
+}
+
+.logo-text.footer {
+    color: white;
+}
+
+.footer-list-item > p {
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    color: white;
+}
+
+.footer-list-item > a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
 }
