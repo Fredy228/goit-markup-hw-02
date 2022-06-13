@@ -1,8 +1,9 @@
 /* 
-    Fonts for using
+   ------ Fonts for using -------
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/*----- Обнуление css -------*/
 body{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -52,14 +53,14 @@ input{
     --color-theme: #2196F3; 
 }
 
-/* Цвет при наведении кнопки */
+/* Цвет при наведении кнопки intro */
 :root {
     --color-btn-hover: #188CE8; 
 }
 
 
 
-/* Header */
+/*------------- Header ------------*/
 
 .header {
     background-color: white;
@@ -101,9 +102,9 @@ input{
     color: var(--color-theme);
 }
 
-/* Main */
+/*--------- Main -----------*/
 
-    /* Intro */
+    /*----------- Intro ------------*/
 
 .intro-inner {
     background-color: #2F303A;
@@ -119,15 +120,19 @@ input{
     color: white;
 }
 
-.intro-btn {
+.btn-main-style {
     font-size: 16px;
     font-family: 'Roboto', sans-serif; 
-    line-height: 1.8;
-    color: white;
-    background-color: var(--color-theme);
     border: none;
-    padding: 10px 32px;
     border-radius: 4px;
+}
+
+.intro-btn {
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-theme);
+    padding: 10px 32px;
+    line-height: 1.8;
     transition: background-color 0.1s linear;
 }
 
@@ -135,7 +140,7 @@ input{
     background-color: var(--color-btn-hover);
 }
 
-/* Esplly */
+/*----------- Esplly --------------*/
 
 .esplyy-list-title {
     font-size: 14px;
@@ -153,7 +158,7 @@ input{
     width: 270px;
 }
 
-/* About */
+/*------------ About -----------*/
 
 .about-title {
     font-size: 36px;
@@ -163,7 +168,7 @@ input{
     margin-bottom: 40px;
 }
 
-/* Team */
+/*--------- Team ------------*/
 
 .team-inner {
     background-color: #F5F4FA;
@@ -199,7 +204,42 @@ input{
     padding-bottom: 30px;
 }
 
-/* Footer */
+/*------- Portfolio -------*/
+
+.portfolio-list-item {
+    margin-bottom: 34px;
+}
+
+.portfoilo-filter-btn {
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-main-text);
+    background-color: #F5F4FA;
+    padding: 6px 22px;
+    transition: all 0.1s linear;
+}
+
+.portfoilo-filter-btn:hover {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.portf-title {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+    color: var(--color-main-text);
+}
+
+.portf-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-secondary-text);
+}
+
+
+/*--------- Footer ------------*/
 
 .footer-inner {
     background-color: #2F303A;
