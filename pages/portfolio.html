@@ -16,18 +16,24 @@
         <div class="container">
             <a class="logo-text" href="../index.html" lang="en"><span>Web</span>Studio</a>
             <nav class="nav">
-                <ul class="nav-list list-header list-style-none">
-                    <li class="nav-list-item link-header"><a href="../index.html">Студия</a></li>
-                    <li class="nav-list-item link-header"><a href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-list-item link-header"><a href="#">Контакты</a></li>
+                <ul class="nav-list list-style-none">
+                    <li class="nav-list-item">
+                        <a class="nav-item-link link-style" href="../index.html">Студия</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-item-link link-style current-link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-item-link link-style" href="#">Контакты</a>
+                    </li>
                 </ul>                                                          
             </nav>              
-            <ul class="address-list list-header list-style-none">
+            <ul class="address-list list-style-none">
                  <li class="address-list-item link-header">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="address-item-link link-style" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="address-list-item link-header">
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="address-list-item">
+                    <a class="address-item-link link-style" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -37,61 +43,74 @@
     <main>
         <!-- Portfolio -->
         <section class="portfolio">
+            <h1 hidden>Портфолио</h1>
             <div class="container">
                 <div class="portfolio-inner">
                     <ul class="portfolio-list list-style-none">
                         <li class="portfolio-list-item">
-                            <button class="portfoilo-filter-btn btn-main-style">Все</button>
-                            <button class="portfoilo-filter-btn btn-main-style">Веб-сайты</button>
-                            <button class="portfoilo-filter-btn btn-main-style">Приложения</button>
-                            <button class="portfoilo-filter-btn btn-main-style">Дизайн</button>
-                            <button class="portfoilo-filter-btn btn-main-style">Маркетинг</button>
+                            <ul class="btn-list list-style-none">
+                                <li class="btn-list-item">
+                                    <button class="portfoilo-filter-btn btn-main-style current-btn">Все</button>
+                                </li>
+                                <li class="btn-list-item">
+                                    <button class="portfoilo-filter-btn btn-main-style">Веб-сайты</button>
+                                </li>
+                                <li class="btn-list-item">
+                                    <button class="portfoilo-filter-btn btn-main-style">Приложения</button>
+                                </li>
+                                <li class="btn-list-item">
+                                    <button class="portfoilo-filter-btn btn-main-style">Дизайн</button>
+                                </li>
+                                <li class="btn-list-item">
+                                    <button class="portfoilo-filter-btn btn-main-style">Маркетинг</button>
+                                </li>
+                            </ul>                                                                                                                                   
                         </li>
                         <li class="portfolio-list-item">
                             <ul class="portf-img-list list-style-none">
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-1.jpg" alt="Технокряк" width="370" height="294">
-                                    <h3 class="portf-title">Технокряк</h3>
+                                    <h2 class="portf-title">Технокряк</h3>
                                     <p class="portf-text">Веб-сайт</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-2.jpg" alt="Постер" width="370" height="294">
-                                    <h3 class="portf-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                    <h2 class="portf-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                                     <p class="portf-text">Дизайн</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-3.jpg" alt="Ресторан" width="370" height="294">
-                                    <h3 class="portf-title">Ресторан <span lang="en">Seafood</span></h3>
+                                    <h2 class="portf-title">Ресторан <span lang="en">Seafood</span></h3>
                                     <p class="portf-text">Приложение</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-4.jpg" alt="Проект" width="370" height="294">
-                                    <h3 class="portf-title">Проект <span lang="en">Prime</span></h3>
+                                    <h2 class="portf-title">Проект <span lang="en">Prime</span></h3>
                                     <p class="portf-text">Маркетинг</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-5.jpg" alt="Проект" width="370" height="294">
-                                    <h3 class="portf-title">Проект <span lang="en">Boxes</span></h3>
+                                    <h2 class="portf-title">Проект <span lang="en">Boxes</span></h3>
                                     <p class="portf-text">Приложение</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-6.jpg" alt="Вдохновление" width="370" height="294">
-                                    <h3 class="portf-title" lang="en">Inspiration has no Borders</h3>
+                                    <h2 class="portf-title" lang="en">Inspiration has no Borders</h3>
                                     <p class="portf-text">Веб-сайт</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-7.jpg" alt="Издание" width="370" height="294">
-                                    <h3 class="portf-title">Издание <span lang="en">Limited Edition</span></h3>
+                                    <h2 class="portf-title">Издание <span lang="en">Limited Edition</span></h3>
                                     <p class="portf-text">Дизайн</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-8.jpg" alt="Проект" width="370" height="294">
-                                    <h3 class="portf-title">Проект <span lang="en">LAB</span></h3>
+                                    <h2 class="portf-title">Проект <span lang="en">LAB</span></h3>
                                     <p class="portf-text">Маркетинг</p>
                                 </li>
                                 <li class="portf-img-item">
                                     <img src="../images/portfolio/portf-9.jpg" alt="Приложение" width="370" height="294">
-                                    <h3 class="portf-title" lang="en">Growing Business</h3>
+                                    <h2 class="portf-title" lang="en">Growing Business</h3>
                                     <p class="portf-text">Приложение</p>
                                 </li>
                             </ul>
@@ -112,15 +131,15 @@
                 <address class="footer-address">
                     <ul class="footer-list list-style-none">
                         <li class="address-list-item footer-list-item">
-                            <p>
+                            <p class="footer-item-text">
                                 г. Киев, пр-т Леси Украинки, 26
                             </p>
                         </li>
                         <li class="address-list-item footer-list-item">
-                            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="link-style footer-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                         <li class="address-list-item footer-list-item">
-                            <a href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="link-style footer-item-link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>                 

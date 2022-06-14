@@ -1,13 +1,27 @@
-/* 
-   ------ Fonts for using -------
+/*  ------ Fonts for using -------
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/* Переменые */
+:root {
+    /* Главный цвет текста */
+    --color-main-text: #212121; 
+
+    /* Второстепенный цвет текста */
+    --color-secondary-text: #757575;
+
+    /* Цвет темы сайта */
+    --color-theme: #2196F3; 
+
+    /* Цвет при наведении кнопки intro */
+    --color-btn-hover: #188CE8; 
+}
+
 /*----- Обнуление css -------*/
 body{
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    color: var(--color-main-text);
 }
 
 *,
@@ -33,38 +47,13 @@ input{
 
 .container{
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1200px;
+    padding: 0 15px;
     width: 100%;
 }
 
-
-/* Главный цвет текста */
-:root {
-    --color-main-text: #212121; 
-}
-
-/* Второстепенный цвет текста */
-:root {
-    --color-secondary-text: #757575; 
-}
-
-/* Цвет темы сайта */
-:root {
-    --color-theme: #2196F3; 
-}
-
-/* Цвет при наведении кнопки intro */
-:root {
-    --color-btn-hover: #188CE8; 
-}
-
-
-
 /*------------- Header ------------*/
 
-.header {
-    background-color: white;
-}
 
 .logo-text {
     font-size: 26px;
@@ -82,23 +71,26 @@ input{
     list-style: none;
 }
 
-.link-header > a {
+.link-style {
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.1s linear;
 }
 
-.nav-list-item > a {
+.nav-item-link {
     color: var(--color-main-text);
 }
 
-.address-list-item > a {
+.address-item-link {
     color: var(--color-secondary-text);
 }
 
+.link-style:hover {
+    color: var(--color-theme);
+}
 
-.link-header > a:hover {
+.current-link {
     color: var(--color-theme);
 }
 
@@ -135,6 +127,7 @@ input{
     line-height: 1.8;
     transition: background-color 0.1s linear;
     cursor: pointer;
+    font: inherit;
 }
 
 .intro-btn:hover {
@@ -147,7 +140,6 @@ input{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--color-main-text);
     width: 270px;
     margin-bottom: 10px;
 }
@@ -164,7 +156,6 @@ input{
 .about-title {
     font-size: 36px;
     font-weight: bold;
-    color: var(--color-main-text);
     text-align: center;
     margin-bottom: 40px;
 }
@@ -176,7 +167,6 @@ input{
 }
 
 .team-title {
-    color: var(--color-main-text);
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -207,6 +197,8 @@ input{
 
 /*------- Portfolio -------*/
 
+
+
 .portfolio-list-item {
     margin-bottom: 34px;
 }
@@ -219,9 +211,16 @@ input{
     padding: 6px 22px;
     transition: all 0.1s linear;
     cursor: pointer;
+    font: inherit;
 }
 
 .portfoilo-filter-btn:hover {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.current-btn {
     background-color: var(--color-theme);
     color: #fff;
     box-shadow: 0 3px 3px #7575758b;
@@ -231,7 +230,6 @@ input{
     font-size: 18px;
     line-height: 2;
     font-weight: bold;
-    color: var(--color-main-text);
 }
 
 .portf-text {
@@ -251,14 +249,14 @@ input{
     color: white;
 }
 
-.footer-list-item > p {
+.footer-item-text {
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
     color: white;
 }
 
-.footer-list-item > a {
+.footer-item-link {
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
