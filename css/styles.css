@@ -134,6 +134,7 @@ input{
     padding: 10px 32px;
     line-height: 1.8;
     transition: background-color 0.1s linear;
+    cursor: pointer;
 }
 
 .intro-btn:hover {
@@ -217,6 +218,7 @@ input{
     background-color: #F5F4FA;
     padding: 6px 22px;
     transition: all 0.1s linear;
+    cursor: pointer;
 }
 
 .portfoilo-filter-btn:hover {
