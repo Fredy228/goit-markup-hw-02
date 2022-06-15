@@ -204,7 +204,6 @@ input{
 }
 
 .portfoilo-filter-btn {
-    font-weight: 500;
     line-height: 1.6;
     color: var(--color-main-text);
     background-color: #F5F4FA;
@@ -212,6 +211,7 @@ input{
     transition: all 0.1s linear;
     cursor: pointer;
     font: inherit;
+    font-weight: 500;
 }
 
 .portfoilo-filter-btn:hover {
